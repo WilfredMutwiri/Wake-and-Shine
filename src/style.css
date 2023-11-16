@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navItem{
+    @apply p-2 md:p-3 ml-1 md:ml-3 mr-1 md:mr-3 hover:text-orange-500 md:hover:text-white
+}
+.navHolder{
+    @apply block shadow-orange-600 shadow-md rounded-md md:rounded-none md:shadow-none text-white bg-black absolute md:relative mt-4 md:mt-0 md:text-black md:flex md:bg-orange-500 w-auto
+}
+#menuBar{
+    @apply invisible md:visible
+}
