@@ -1,2 +1,2 @@
-# Arise-and-Shine
-The Arise and shine official website
+# Wake-and-Shine
+The Wake and shine official website
