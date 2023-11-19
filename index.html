@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="public/style.css">
     <link rel="shortcut icon" href="public/images/PROPOSED 2E.webp" type="image/x-icon">
 </head>
-<body class="overflow-hidden m-0">
+<body style="scroll-behavior:smooth;">
     <header><!--header section-->
         <div class="w-full bg-orange-500 h-20 relative z-10">
             <div class="flex w-11/12 m-auto p-1 relative">
@@ -17,7 +17,7 @@
                 <div class="m-auto w-auto" id="menuBar">
                     <ul class="navHolder">
                         <li class="navItem"><a href="#">Home</a></li>
-                        <li class="navItem"><a href="#">About Us</a></li>
+                        <li class="navItem"><a href="#about">About Us</a></li>
                         <li class="navItem"><a href="#">What we do</a></li>
                         <li class="navItem"><a href="#">Our Achievements</a></li>
                         <li class="navItem"><a href="#">Contacts</a></li>
@@ -33,11 +33,11 @@
     </header>
     <main>
         <section><!--homeSection-->
-            <div class=" w-96 md:w-full overflow-hidden bg-no-repeat bg-contain md:bg-cover" style="background-image: url(public/images/81251313_2562565540654881_284446475604197376_o\ -\ Copy.webp);height:450px;">
-                <div class="absolute inset-0 bg-black opacity-60 h-[265px] md:h-[530px]">
+            <div class=" w-auto md:w-full bg-no-repeat bg-contain md:bg-cover" style="background-image: url(public/images/81251313_2562565540654881_284446475604197376_o\ -\ Copy.webp); height: 500px;">
+                <div class="inset-0 bg-gray-900 opacity-60 h-[160px] md:h-[500px]">
                     <div class=" mt-20 md:mt-0 absolute inset-0 items-center justify-center">
-                        <div class="m-auto w-8/12 pt-7 md:pt-60 p-10 font-sans">
-                            <div class="text-sm md:text-3xl text-white font-semibold justify-center" id="text-container">
+                        <div class="m-auto w-11/12 md:w-8/12 pt-6 md:pt-60 p-10 font-sans">
+                            <div class="text-sm md:text-3xl text-white font-bold justify-center" id="text-container">
                                 <h2>Unleash the Possible: Join Our Journey in Community Empowerment and Youth Advancement!</h2>
                                 </div>
                                 <div class="mt-2 md:mt-10 flex justify-normal md:justify-center w-60 md:w-full">
@@ -51,10 +51,30 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!-- <div class="">
-                <h2 class="text-orange-500">~~About Us</h2>
-            </div> -->
+        <section><!--about section-->
+            <div class="-mt-[340px] md:-mt-0 w-full pt-10 md:pt-20 pb-10 bg-gray-200" id="about">
+                <div class="w-11/12 m-auto block md:flex justify-between">
+                    <div class="w-10/12">
+                        <img class="object-fill md:object-cover h-auto md:h-[400px]" src="public/images/81771440_2562564857321616_3486387621754568704_o - Copy.jpg">
+                    </div>
+                    <div class="ml-10 w-10/12 mt-5">
+                        <h2 class="text-orange-500 text-xl">~~About Us</h2>
+                        <p class="leading-relaxed text-lg pt-3">
+                            Wake and Shine Self Help group is an established
+                            social group registered under the social services
+                            department, registration number; THA/DSS/SH/4163.
+                            <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisici
+                            ng elit. Laudantium maiores inventore asperiores s
+                            imilique. Nesciunt eum maiores nulla praesentium u
+                            t, sit nostrum exercitationem magnam quod dicta en
+                             facilis, explicabo officia perspiciatis ullam, vero non.
+                             <a class="text-orange-500" href="#">Continue reading></a>
+                        </p>
+                        <button class="bg-orange-500 p-2 w-28 mt-10 rounded-md text-black hover:text-white hover:bg-red-600">Join Us</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="src/script.js"></script>
