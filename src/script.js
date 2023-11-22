@@ -23,22 +23,32 @@ document.addEventListener('DOMContentLoaded', function () {
     updateText();
     setInterval(updateText,4000);
 });
-window.addEventListener("scroll",reveal);
-function reveal(){
-    var reveals=document.querySelectorAll("#reveal");
-    for(var i=0;i<reveals.length;i++){
+let achieveHolder=document.getElementById("achieveHolder");
+let achieveP=document.getElementById("achieveP");
+achieveHolder.addEventListener("mouseenter",()=>{
+    achieveP.style.visibility="visible";
+})
+let achieveHolder2=document.getElementById("achieveHolder2");
+let achieveP2=document.getElementById("achieveP2");
+achieveHolder.addEventListener("mouseenter",()=>{
+    achieveP2.style.visibility="visible";
+})
+// window.addEventListener("scroll",reveal);
+// function reveal(){
+//     var reveals=document.querySelectorAll("#reveal");
+//     for(var i=0;i<reveals.length;i++){
 
-        var windowHeight=window.innerHeight;
-        var revealTop=reveals[i].getBoundingClientRect().top;
-        var revealPoint=200;
+//         var windowHeight=window.innerHeight;
+//         var revealTop=reveals[i].getBoundingClientRect().top;
+//         var revealPoint=200;
 
-        if(revealTop<windowHeight-revealPoint){
-            reveals[i].classList.add("active");
-        }else{
-            reveals[i].classList.remove("active");
-        }
-    }
-}
+//         if(revealTop<windowHeight-revealPoint){
+//             reveals[i].classList.add("active");
+//         }else{
+//             reveals[i].classList.remove("active");
+//         }
+//     }
+// }
 
   
 
