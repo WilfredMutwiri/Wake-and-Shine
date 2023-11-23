@@ -33,6 +33,11 @@ let achieveP2=document.getElementById("achieveP2");
 achieveHolder.addEventListener("mouseenter",()=>{
     achieveP2.style.visibility="visible";
 })
+let achieveHolder3=document.getElementById("achieveHolder3");
+let achieveP3=document.getElementById("achieveP3");
+achieveHolder.addEventListener("mouseenter",()=>{
+    achieveP3.style.visibility="visible";
+})
 // window.addEventListener("scroll",reveal);
 // function reveal(){
 //     var reveals=document.querySelectorAll("#reveal");

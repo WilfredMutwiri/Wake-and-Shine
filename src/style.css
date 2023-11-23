@@ -12,10 +12,10 @@
     @apply invisible md:visible
 }
 .serviceHolder{
-    @apply bg-white rounded-md shadow-md p-3 w-80 mr-7 text-black hover:text-white hover:bg-black mb-6 md:mb-0
+    @apply bg-white rounded-md shadow-md p-3 w-80 ml-7 md:ml-0 mr-0 md:mr-7 text-black hover:text-white hover:bg-black mb-6 md:mb-0
 }
 .abtHolder{
-    @apply bg-white hover:bg-black text-black hover:text-white ml-10 p-7 mt-5 md:mt-0
+    @apply bg-white hover:bg-black text-black hover:text-white ml-0 md:ml-10 p-7 mt-10 md:mt-0 shadow-md
 }
 .abtH2{
     @apply text-center text-orange-500 text-lg pb-5
