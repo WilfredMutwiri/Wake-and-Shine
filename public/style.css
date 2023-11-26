@@ -586,8 +586,12 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .ml-0 {
@@ -634,8 +638,8 @@ video {
   margin-top: 7rem;
 }
 
-.mt-64 {
-  margin-top: 16rem;
+.mt-44 {
+  margin-top: 11rem;
 }
 
 .block {
@@ -1221,6 +1225,10 @@ video {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mb-32 {
+    margin-bottom: 8rem;
   }
 
   .md\:ml-10 {
