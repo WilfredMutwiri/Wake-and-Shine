@@ -26,3 +26,23 @@
 .member{
     @apply w-9/12 h-64 bg-red-600 w-full md:w-9/12 object-cover shadow-sm shadow-gray-200
 }
+.blogHolder{
+    @apply bg-gray-900 text-white h-auto w-auto shadow-2xl
+}
+.blogImg{
+@apply w-full object-cover h-56
+}
+.blogH4{
+    @apply bg-blue-700 p-2 mt-4 w-44 text-white
+}
+.reveal{
+    position:relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2000ms ease;
+}
+.reveal.active{
+    transform: translateX(0px);
+    opacity: 1;
+
+}
