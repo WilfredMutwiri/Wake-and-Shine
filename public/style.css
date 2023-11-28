@@ -974,8 +974,16 @@ video {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .italic {
   font-style: italic;
+}
+
+.leading-loose {
+  line-height: 2;
 }
 
 .leading-relaxed {
