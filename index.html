@@ -9,7 +9,7 @@
 </head>
 <body style="scroll-behavior:smooth;">
     <header><!--header section-->
-        <div class="w-full bg-blue-950 h-20 relative z-10">
+        <div class="w-full bg-blue-950 h-20 z-10 fixed">
             <div class="flex w-11/12 m-auto p-1 relative">
                 <div>
                     <img class="w-14 rounded-full m-1" src="public/images/PROPOSED 2E.webp" alt="logo">
@@ -17,9 +17,28 @@
                 <div class="m-auto w-auto" id="menuBar">
                     <ul class="navHolder">
                         <li class="navItem"><a href="#">Home</a></li>
-                        <li class="navItem"><a href="#about">About Us</a></li>
+                        <li class="navItem relative flex"><a href="#about">About Us</a>
+                            <svg id="navArrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-1 mt-1 text-orange-500 hover:text-red-700 font-bold">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                              </svg>  
+                            <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible " id="moreNav">
+                                <li><a href="#">Our Mission</a></li>
+                                <li><a href="#">Our Vision</a></li>
+                                <li><a href="#">Core Values</a></li>
+                            </ul>
+                        </li>
                         <li class="navItem"><a href="#services">What we do</a></li>
-                        <li class="navItem"><a href="#achievements">Our Achievements</a></li>
+                        <li class="navItem relative flex"><a href="#achievements">Our Achievements</a>
+                            <svg id="navArrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-1 mt-1 text-orange-500 hover:text-red-700 font-bold">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                              </svg>  
+                            <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible" id="moreNav2">
+                                <li><a href="#">Our Events</a></li>
+                                <li><a href="#">Our Blogs</a></li>
+                                <li><a href="#">Testimonies</a></li>
+                                <li><a href="#">Our Team</a></li>
+                            </ul>
+                        </li>
                         <li class="navItem"><a href="#contacts">Contacts</a></li>
                     </ul>
                 </div>
@@ -31,13 +50,20 @@
             </div>
         </div>
     </header>
+    <div class="mt-52 ml-5 fixed z-10">
+        <img class="hImg" src="public/images/facebook-1-svgrepo-com.svg">
+        <img class="hImg" src="public/images/instagram-1-svgrepo-com.svg">
+        <img class="hImg" src="public/images/linkedin-1-svgrepo-com.svg">
+        <img class="hImg" src="public/images/whatsapp-svgrepo-com.svg">
+        <img class="hImg" src="public/images/twitter-svgrepo-com.svg">
+    </div>
     <main>
         <section><!--homeSection-->
-            <div class=" w-auto md:w-full bg-no-repeat bg-contain md:bg-cover" style="background-image: url(public/images/WhatsApp\ Image\ 2023-11-21\ at\ 12.29.27\ PM\ \(1\).webp); height: 550px;">
-                <div class="inset-0 bg-gray-900 opacity-60 h-[210px] md:h-[550px]">
+            <div class=" w-auto md:w-full bg-no-repeat bg-cover md:bg-cover min-h-screen md:h-[630px]" style="background-image: url(public/images/WhatsApp\ Image\ 2023-11-21\ at\ 12.29.27\ PM\ \(1\).webp);">
+                <div class="inset-0 bg-gray-900 opacity-60 min-h-screen md:h-[630px]">
                     <div class=" mt-20 md:mt-0 absolute inset-0 items-center justify-center">
-                        <div class="m-auto w-11/12 md:w-8/12 pt-6 md:pt-60 p-10 font-sans">
-                            <div class="text-sm md:text-3xl text-white font-bold justify-center" id="text-container">
+                        <div class="m-auto w-11/12 md:w-8/12 pt-40 md:pt-60 p-10 font-sans">
+                            <div class="text-2xl md:text-3xl text-white font-bold justify-center" id="text-container">
                                 <h2>Unleash the Possible: Join Our Journey in Community Empowerment and Youth Advancement!</h2>
                                 </div>
                                 <div class="mt-2 md:mt-10 flex justify-normal md:justify-center w-60 md:w-full">
@@ -52,9 +78,9 @@
             </div>
         </section>
         <section class="reveal"><!--about section-->
-            <div class="-mt-[340px] md:-mt-0 w-full pt-12 md:pt-44 pb-10 bg-gray-100" id="about">
-                <div id="reveal">
-                    <div class="w-11/12 m-auto block md:flex justify-between">
+            <div class=" w-full pt-12 md:pt-44 pb-10 bg-gray-100">
+                <div id="reveal moreAbout">
+                    <div class="w-10/12 m-auto block md:flex justify-between">
                         <div class="w-auto h-[400px] reveal">
                             <img class="object-cover md:object-cover h-[300px] md:h-[400px] rounded-md shadow-sm" src="public/images/81771440_2562564857321616_3486387621754568704_o - Copy.webp">
                         </div>
@@ -75,14 +101,14 @@
                             <button class="bg-orange-500 p-2 w-28 mt-10 rounded-md text-black hover:text-white hover:bg-red-600">Join Us</button>
                         </div>
                     </div>
-                    <div class="w-11/12 m-auto block md:grid grid-cols-3 pt-10 pb-10 reveal">
-                        <div class="abtHolder" style="border-radius: 10px; transition: all ease 1s;transform: scale(2px);">
+                    <div class="w-11/12 m-auto block md:grid grid-cols-3 pt-10 pb-10 reveal" id="moreAbout">
+                        <div class="abtHolder" id="vision" style="border-radius: 10px; transition: all ease 1s;transform: scale(2px);">
                             <h2 class="abtH2">~ Our Vision~</h2>
                             <p>
                                 An empowered community with the understanding of utilizing resources rationally for living dignified lives.
                             </p>
                         </div>
-                        <div class="abtHolder" style="border-radius:10px; transition: all ease 1s;transform: scale(2px);">
+                        <div class="abtHolder" id="mission" style="border-radius:10px; transition: all ease 1s;transform: scale(2px);">
                             <h2 class="abtH2">~ Our Mission ~</h2>
                             <p>
                                 We seek to increase the capacity of the members and the community to
@@ -91,7 +117,7 @@
                                 diversification of livelihoods and human rights stewardship.
                             </p>
                         </div>
-                        <div class="abtHolder" style="border-radius:10px; transition: all ease 1s;transform: scale(2px);">
+                        <div class="abtHolder" id="values" style="border-radius:10px; transition: all ease 1s;transform: scale(2px);">
                             <h2 class="abtH2">~ Core Values~</h2>
                             <p>
                                 <ul>
@@ -176,7 +202,7 @@
         <section><!--achievements section-->
             <div class="w-full pt-20 bg-gray-100 pb-20" id="achievements">
                 <h2 class="text-orange-500 text-xl text-center pb-5">~ Our Achievements ~</h2>
-                <div class="w-11/12 block md:grid grid-cols-3 m-auto reveal">
+                <div class="w-10/12 block md:grid grid-cols-3 m-auto reveal">
                     <div class="" id="achieveHolder">
                         <div>
                             <div class="w-auto md:w-11/12 h-[300px] md:h-auto">
@@ -217,8 +243,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-11/12 md:w-full block md:grid grid-cols-3 m-auto mt-10">
-                    <div class="mt-20 md:mt-0 ml-0 md:ml-10" id="achieveHolder3">
+                <div class="w-10/12 md:w-full block md:grid grid-cols-3 m-auto mt-10 ml-0 md:ml-14">
+                    <div class="mt-20 md:mt-0 ml-0 md:ml-10 reveal" id="achieveHolder3">
                         <div>
                             <h2 class="text-center p-3  text-white bg-black w-auto">Child protection</h2>
                             <img class="w-auto h-[200px] md:h-[300px] object-cover" id="achievImg3" src="public/images/WhatsApp Image 2023-11-23 at 11.18.54 PM.webp">
@@ -524,45 +550,49 @@
         </section>
         <footer><!--footer section-->
             <div class="w-full pt-10 pb-10 bg-black">
-                <div class="w-10/12 m-auto p-2 block md:flex">
-                    <div>
+                <div class="w-11/12 m-auto p-3 block md:flex">
+                    <div class="w-full md:w-6/12 pr-0 md:pr-3 pb-4 md:pb-0">
                         <img class="w-14 rounded-full m-1" src="public/images/PROPOSED 2E.webp" alt="logo">
-                        <p>
-                            <span>Wake & Shine</span><br>
+                        <p class="text-white italic">
+                            <span class="text-orange-500 pt-3 pb-3">Wake & Shine</span><br>
                             Unleash the Possible: Join Our Journey in Community Empowerment and Youth Advancement!
                         </p>
                     </div>
-                    <div>
-                        <ul class="navHolder">
-                            <li class="navItem"><a href="#">Home</a></li>
-                            <li class="navItem"><a href="#about">About Us</a></li>
-                            <li class="navItem"><a href="#services">What we do</a></li>
-                            <li class="navItem"><a href="#achievements">Our Achievements</a></li>
-                            <li class="navItem"><a href="#contacts">Contacts</a></li>
+                    <div class="text-white">
+                        <ul class="block pb-4 md:pb-0">
+                            <li class="fNav"><a href="#">Home</a></li>
+                            <li class="fNav"><a href="#about">About Us</a></li>
+                            <li class="fNav"><a href="#services">What we do</a></li>
+                            <li class="fNav"><a href="#achievements">Our Achievements</a></li>
+                            <li class="fNav"><a href="#contacts">Contacts</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <div class="pl-0 md:pl-[20px]">
+                        <div class="flex pb-1 md:pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-600">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                               </svg>
-                              <h2> Kenya, Tharaka Nithi County, Tharaka-South</h2>                              
+                              <h2 class="text-orange-500 ml-4">Kenya, Tharaka Nithi County, Tharaka-South</h2>                              
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-purple-600">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                               </svg>
-                              <h2>wakeandshine@gmail.com</h2>                              
+                              <h2 class="text-orange-500 ml-4">wakeandshine@gmail.com</h2>                              
                         </div>
-                        <div>
-                            <img src="public/images/facebook-1-svgrepo-com.svg">
-                            <img src="public/images/instagram-1-svgrepo-com.svg">
-                            <img src="public/images/linkedin-1-svgrepo-com.svg">
-                            <img src="public/images/whatsapp-svgrepo-com.svg">
-                            <img src="public/images/twitter-svgrepo-com.svg">
+                        <div class="flex pt-5">
+                            <img class="fImg" src="public/images/facebook-1-svgrepo-com.svg">
+                            <img class="fImg" src="public/images/instagram-1-svgrepo-com.svg">
+                            <img class="fImg" src="public/images/linkedin-1-svgrepo-com.svg">
+                            <img class="fImg" src="public/images/whatsapp-svgrepo-com.svg">
+                            <img class="fImg" src="public/images/twitter-svgrepo-com.svg">
                         </div>
                     </div>
+                </div>
+                <hr class="w-[95%] m-auto">
+                <div class="w-full md:w-96 p-3 m-auto">
+                    <h2 class="text-red-600 italic text-center">&copy;2023 Wake and Shine All Rights Reserved</h2>
                 </div>
             </div>
         </footer>

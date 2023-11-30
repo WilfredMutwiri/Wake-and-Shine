@@ -1,21 +1,4 @@
 
-// window.addEventListener("scroll",reveal);
-// function reveal(){
-//     var reveals=document.querySelectorAll(".reveal");
-//     for(var i=0;i<reveals.length;i++){
-
-//         var windowHeight=window.innerHeight;
-//         var revealTop=reveals[i].getBoundingClientRect().top;
-//         var revealPoint=200;
-
-//         if(revealTop<windowHeight-revealPoint){
-//             reveals[i].classList.add("active");
-//         }else{
-//             reveals[i].classList.remove("active");
-//         }
-//     }
-// }
-// reveal();
 window.addEventListener("scroll",reveal);
 function reveal(){
     var reveals=document.querySelectorAll(".reveal");
@@ -32,7 +15,29 @@ function reveal(){
         }
     }
 }
-
+// reveal more nav info
+let navCounter=2;
+let navArrow=document.getElementById("navArrow");
+let moreNav=document.getElementById("moreNav");
+navArrow.addEventListener("click",()=>{
+    navCounter++;
+    moreNav.style.visibility="visible";
+    if(navCounter>=2){
+    moreNav.style.visibility="hidden";
+    navCounter=0;
+}
+})
+let navCounter2=2;
+let navArrow2=document.getElementById("navArrow2");
+let moreNav2=document.getElementById("moreNav2");
+navArrow2.addEventListener("click",()=>{
+    navCounter2++;
+    moreNav2.style.visibility="visible";
+    if(navCounter2>=2){
+    moreNav2.style.visibility="hidden";
+    navCounter2=0;
+}
+})
 // make menuIcon resonsive
 let menuIcon=document.querySelector("#menu");
 let menuBar=document.querySelector("#menuBar")

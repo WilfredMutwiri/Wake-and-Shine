@@ -6,7 +6,7 @@
     @apply p-2 md:p-3 ml-1 md:ml-3 mr-1 md:mr-3 hover:text-orange-500 md:hover:text-orange-500
 }
 .navHolder{
-    @apply block shadow-orange-600 shadow-md rounded-md md:rounded-none md:shadow-none text-white bg-black absolute md:relative mt-4 md:mt-0 md:text-white md:flex md:bg-blue-950 w-auto
+    @apply block shadow-gray-100 shadow-sm rounded-md md:rounded-none md:shadow-none text-white bg-black absolute md:relative mt-4 md:mt-0 md:text-white md:flex md:bg-blue-950 w-auto
 }
 #menuBar{
     @apply invisible md:visible
@@ -45,4 +45,13 @@
     transform: translateX(0px);
     opacity: 1;
 
+}
+.fImg{
+    @apply w-5 ml-3
+}
+.fNav{
+    @apply text-blue-700 hover:text-orange-500
+}
+.hImg{
+    @apply w-5 md:w-10 mt-3
 }
