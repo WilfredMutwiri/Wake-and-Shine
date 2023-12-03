@@ -16,39 +16,51 @@ function reveal(){
     }
 }
 // reveal more nav info
-let navCounter=2;
+let counter=0;
+let counter2=0;
 let navArrow=document.getElementById("navArrow");
 let moreNav=document.getElementById("moreNav");
-navArrow.addEventListener("click",()=>{
-    navCounter++;
+navArrow.addEventListener("mouseover",()=>{
     moreNav.style.visibility="visible";
-    if(navCounter>=2){
+});
+navArrow.addEventListener("click",()=>{
+    moreNav.style.visibility="visible";
+    counter2++;
+    if(counter2>=2){
+        moreNav.style.visibility="hidden";
+        counter2=0;
+    }
+});
+moreNav.addEventListener("mouseleave",()=>{
     moreNav.style.visibility="hidden";
-    navCounter=0;
-}
 })
-let navCounter2=2;
 let navArrow2=document.getElementById("navArrow2");
 let moreNav2=document.getElementById("moreNav2");
-navArrow2.addEventListener("click",()=>{
-    navCounter2++;
+navArrow2.addEventListener("mouseover",()=>{
     moreNav2.style.visibility="visible";
-    if(navCounter2>=2){
+})
+navArrow2.addEventListener("click",()=>{
+    moreNav2.style.visibility="visible";
+    counter2++;
+    if(counter2>=2){
+        moreNav2.style.visibility="hidden";
+        counter2=0;
+    }
+})
+moreNav2.addEventListener("mouseleave",()=>{
     moreNav2.style.visibility="hidden";
-    navCounter2=0;
-}
 })
 // make menuIcon resonsive
 let menuIcon=document.querySelector("#menu");
-let menuBar=document.querySelector("#menuBar")
-let menuClickCounter=2;
+let menuBar=document.querySelector("#menuBar");
 menuIcon.addEventListener("click",()=>{
     menuBar.style.visibility="visible";
-    menuClickCounter ++;
-    console.log(menuClickCounter)
-    if(menuClickCounter>=2){
+    counter++;
+    if(counter>=2){
         menuBar.style.visibility="hidden";
-        menuClickCounter=0;
+        moreNav2.style.visibility="hidden";
+        moreNav.style.visibility="hidden";
+        counter=0;
     }
 });
 // home text changer

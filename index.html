@@ -22,9 +22,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                               </svg>  
                             <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible z-10 shadow-sm shadow-purple-50" id="moreNav">
-                                <li><a href="#">Our Mission</a></li>
-                                <li><a href="#">Our Vision</a></li>
-                                <li><a href="#">Core Values</a></li>
+                                <li class="hover:text-white"><a href="#moreAbout">Our Mission</a></li>
+                                <li class="hover:text-white"><a href="#">Our Vision</a></li>
+                                <li class="hover:text-white"><a href="#">Core Values</a></li>
                             </ul>
                         </li>
                         <li class="navItem"><a href="#services">What we do</a></li>
@@ -33,10 +33,10 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                               </svg>  
                             <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible z-10 shadow-sm shadow-purple-50" id="moreNav2">
-                                <li><a href="#">Our Events</a></li>
-                                <li><a href="#">Our Blogs</a></li>
-                                <li><a href="#">Testimonies</a></li>
-                                <li><a href="#">Our Team</a></li>
+                                <li class="hover:text-white"><a href="#">Our Events</a></li>
+                                <li class="hover:text-white"><a href="#">Our Blogs</a></li>
+                                <li class="hover:text-white"><a href="#">Testimonies</a></li>
+                                <li class="hover:text-white"><a href="#">Our Team</a></li>
                             </ul>
                         </li>
                         <li class="navItem"><a href="#contacts">Contacts</a></li>
@@ -51,7 +51,7 @@
         </div>
     </header>
     <div class="p-5 absolute mt-48 z-10">
-        <img class="hImg" src="public/images/facebook-1-svgrepo-com.svg">
+        <a href="https://www.facebook.com/profile.php?id=100092473608381" target="_blank"><img class="hImg" src="public/images/facebook-1-svgrepo-com.svg"></a>
         <img class="hImg" src="public/images/instagram-1-svgrepo-com.svg">
         <img class="hImg" src="public/images/linkedin-1-svgrepo-com.svg">
         <img class="hImg" src="public/images/whatsapp-svgrepo-com.svg">
@@ -79,7 +79,7 @@
         </section>
         <section class="reveal"><!--about section-->
             <div class=" w-full pt-12 md:pt-44 pb-10 bg-gray-100">
-                <div id="reveal moreAbout">
+                <div id="reveal">
                     <div class="w-10/12 m-auto block md:flex justify-between">
                         <div class="w-auto h-[400px] reveal">
                             <img class="object-cover md:object-cover h-[300px] md:h-[400px] rounded-md shadow-sm" src="public/images/81771440_2562564857321616_3486387621754568704_o - Copy.webp">
@@ -96,9 +96,9 @@
                                 imilique. Nesciunt eum maiores nulla praesentium u
                                 t, sit nostrum exercitationem magnam quod dicta en
                                  facilis, explicabo officia perspiciatis ullam, vero non.
-                                 <a class="text-blue-700" href="#">Continue reading></a>
+                                 <a class="text-blue-700" href="about.html">Continue reading></a>
                             </p>
-                            <button class="bg-orange-500 p-2 w-28 mt-10 rounded-md text-black hover:text-white hover:bg-red-600">Join Us</button>
+                            <button class="bg-orange-500 p-2 w-28 mt-10 rounded-md text-black hover:text-white hover:bg-red-600" id="aboutBtn">Join Us</button>
                         </div>
                     </div>
                     <div class="w-11/12 m-auto block md:grid grid-cols-3 pt-10 pb-10 reveal" id="moreAbout">
