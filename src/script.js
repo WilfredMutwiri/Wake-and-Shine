@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // reveal more nav info
 let counter=0;
 let counter2=0;
+let counter3=0;
 let navArrow=document.getElementById("navArrow");
 let moreNav=document.getElementById("moreNav");
 navArrow.addEventListener("mouseover",()=>{
@@ -60,6 +61,22 @@ navArrow2.addEventListener("click",()=>{
         counter2=0;
     }
 })
+let navArrow3=document.getElementById("navArrow3");
+let moreNav3=document.getElementById("moreNav3");
+navArrow3.addEventListener("mouseover",()=>{
+    moreNav3.style.visibility="visible";
+})
+navArrow3.addEventListener("click",()=>{
+    moreNav3.style.visibility="visible";
+    counter3++;
+    if(counter3>=2){
+        moreNav3.style.visibility="hidden";
+        counter3=0;
+    }
+})
+moreNav3.addEventListener("mouseleave",()=>{
+    moreNav3.style.visibility="hidden";
+})
 moreNav2.addEventListener("mouseleave",()=>{
     moreNav2.style.visibility="hidden";
 })
@@ -72,6 +89,7 @@ menuIcon.addEventListener("click",()=>{
     if(counter>=2){
         menuBar.style.visibility="hidden";
         moreNav2.style.visibility="hidden";
+        moreNav3.style.visibility="hidden";
         moreNav.style.visibility="hidden";
         counter=0;
     }
