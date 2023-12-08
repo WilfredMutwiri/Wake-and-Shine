@@ -15,6 +15,19 @@ function reveal(){
         }
     }
 }
+//change background image
+document.addEventListener('DOMContentLoaded', function () {
+    let backGroundImages=["url('public/images/WhatsApp Image 2023-12-02 at 4.20.48 PM.webp')","url('public/images/81771440_2562564857321616_3486387621754568704_o - Copy.jpg')","url('public/images/WhatsApp Image 2023-11-23 at 11.17.04 PM.webp')","url('public/images/WhatsApp Image 2023-12-03 at 12.54.10 PM.webp')","url('public/images/WhatsApp Image 2023-11-23 at 11.18.54 PM.webp')"];
+    let bgImageCounter=0;
+    let slider=document.querySelector(".main");
+    function updateImage() {
+        slider.style.backgroundImage=backGroundImages[bgImageCounter];
+        bgImageCounter = (bgImageCounter + 1) % backGroundImages.length;
+    }
+    updateImage();
+    setInterval(updateImage,4000);
+});
+// 
 // reveal more nav info
 let counter=0;
 let counter2=0;
