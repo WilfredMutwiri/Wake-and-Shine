@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wake and Shine</title>
     <link rel="stylesheet" href="public/style.css">
-    <link rel="shortcut icon" href="public/images/PROPOSED 2E.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="public/images/WhatsApp Image 2023-12-11 at 11.30.51 AM.jpeg" type="image/x-icon">
 </head>
 <body style="scroll-behavior:smooth;">
     <header><!--header section-->
         <div class="w-full bg-blue-950 h-20 z-10">
             <div class="flex w-full m-auto p-1 relative">
                 <div>
-                    <img class="w-14 rounded-full m-1" src="public/images/PROPOSED 2E.webp" alt="logo">
+                    <img class="w-14 rounded-full m-1" src="public/images/WhatsApp Image 2023-12-11 at 11.30.51 AM.jpeg" alt="logo">
                 </div>
                 <div class="m-auto w-auto z-10" id="menuBar">
                     <ul class="navHolder">
@@ -22,9 +22,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                               </svg>  
                             <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible shadow-sm shadow-purple-50 z-10" id="moreNav">
-                                <li class="hover:text-white"><a href="#moreAbout">Our Mission</a></li>
-                                <li class="hover:text-white"><a href="#">Our Vision</a></li>
-                                <li class="hover:text-white"><a href="#">Core Values</a></li>
+                                <li class="hover:text-white"><a href="#abt">Our Mission</a></li>
+                                <li class="hover:text-white"><a href="#abt">Our Vision</a></li>
+                                <li class="hover:text-white"><a href="#abt">Core Values</a></li>
                             </ul>
                         </li>
                         <li class="navItem relative flex"><a href="#services">What we do</a>
@@ -32,7 +32,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                               </svg>  
                             <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible shadow-sm shadow-purple-50 z-10" id="moreNav3">
-                                <li class="hover:text-white"><a href="FAQ.html">What we do</a></li>
+                                <li class="hover:text-white"><a href="#services">What we do</a></li>
                                 <li class="hover:text-white"><a href="FAQ.html">FAQs</a></li>
                             </ul>
                         </li>
@@ -41,13 +41,19 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                               </svg>  
                             <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible z-10 shadow-sm shadow-purple-50" id="moreNav2">
-                                <li class="hover:text-white"><a href="#">Our Events</a></li>
-                                <li class="hover:text-white"><a href="#">Our Blogs</a></li>
-                                <li class="hover:text-white"><a href="#">Testimonies</a></li>
-                                <li class="hover:text-white"><a href="#">Our Team</a></li>
+                                <li class="hover:text-white"><a href="#events">Our Events</a></li>
+                                <li class="hover:text-white"><a href="#blogs">Our Blogs</a></li>
+                                <li class="hover:text-white"><a href="#testimonies">Testimonies</a></li>
                             </ul>
                         </li>
-                        <li class="navItem"><a href="#contacts">Contacts</a></li>
+                        <li class="navItem relative flex"><a href="#contacts">Contacts</a>
+                            <svg id="navArrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-1 mt-1 text-orange-500 hover:text-red-700 font-bold">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                              </svg>  
+                            <ul class="absolute w-28 p-2 mt-6 bg-blue-950 invisible z-10 shadow-sm shadow-purple-50" id="moreNav4">
+                                <li class="hover:text-white"><a href="#team">Our Team</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div>
@@ -75,7 +81,7 @@
                                 </div>
                                 <div class="mt-4 md:mt-10 flex justify-normal md:justify-center w-60 md:w-full">
                                     <div class="h-auto">
-                                        <button class="w-auto md:w-40 md p-2 md:p-4 bg-orange-500 hover:bg-white opacity-100 rounded-md text-white hover:text-black font-bold text-sm md:text-lg" style="transition: all 1s ease;transform:translate(2px);"><a href="https://forms.gle/JGpk1hRiXTvv5YGj6">Join Us</a></button>
+                                        <button class="w-auto md:w-40 md p-2 md:p-4 bg-orange-500 hover:bg-white opacity-100 rounded-md text-white hover:text-black font-bold text-sm md:text-lg" style="transition: all 1s ease;transform:translate(2px);"><a href="https://forms.gle/JGpk1hRiXTvv5YGj6" target="_blank">Join Us</a></button>
                                         <button class="ml-4 w-auto md:w-40 md p-2 md:p-4 bg-orange-500 hover:bg-white rounded-md text-white font-bold text-sm md:text-lg  hover:text-black" style="transition: all 1s ease;transform: translate(2px);"><a href="about.html">Learn More</a></button>
                                     </div>
                         </div>
@@ -83,7 +89,7 @@
                     </div>
             </div>
         </section>
-        <section class="reveal"><!--about section-->
+        <section class="reveal" id="abtHolder"><!--about section-->
             <div class=" w-full pt-12 md:pt-44 pb-10 bg-gray-100">
                 <div id="reveal">
                     <div class="w-10/12 m-auto block md:flex justify-between">
@@ -91,20 +97,19 @@
                             <img class="object-cover md:object-cover h-[300px] md:h-[400px] rounded-md shadow-sm" src="public/images/81771440_2562564857321616_3486387621754568704_o - Copy.webp">
                         </div>
                         <div class="ml-10 w-10/12 mt-2">
-                            <h2 class="text-orange-500 text-xl" id="reveal">~~About Us</h2>
+                            <h2 class="text-orange-500 text-xl">~~About Us</h2>
                             <p class="leading-relaxed text-lg pt-2">
                                 Wake and Shine Self Help group is an established
                                 social group registered under the social services
                                 department, registration number; THA/DSS/SH/4163.
                                 <br>
-                                Lorem ipsum dolor, sit amet consectetur adipisici
-                                ng elit. Laudantium maiores inventore asperiores s
-                                imilique. Nesciunt eum maiores nulla praesentium u
-                                t, sit nostrum exercitationem magnam quod dicta en
-                                 facilis, explicabo officia perspiciatis ullam, vero non.
+                                Since it's establishement, the group has been of great help to the 
+                                residents of Tharaka South district in Tharaka-Nithi county. The
+                                group is focused on ensuring community development and Advancementof the
+                                youth through support and mentorship.
                                  <a class="text-blue-700" href="about.html">Continue reading></a>
                             </p>
-                            <button class="bg-orange-500 p-2 w-28 mt-10 rounded-md text-black hover:text-white hover:bg-red-600" id="aboutBtn"><a href="https://forms.gle/JGpk1hRiXTvv5YGj6">Join Us</a> </button>
+                            <button class="bg-orange-500 p-2 w-28 mt-10 rounded-md text-black hover:text-white hover:bg-red-600" id="abt"><a href="https://forms.gle/JGpk1hRiXTvv5YGj6">Join Us</a> </button>
                         </div>
                     </div>
                     <div class="w-11/12 m-auto block md:grid grid-cols-3 pt-10 pb-10 reveal" id="moreAbout">
@@ -144,7 +149,7 @@
             <div class="pt-20 bg-gray-200 w-full pb-20" id="services">
                 <h2 class="text-center text-orange-500 text-xl pb-6">~ What We Do ~</h2>
                 <div class="w-11/12 m-auto block md:flex flex-wrap reveal">
-                    <div class="serviceHolder" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px; border-bottom-left-radius: 40px;">
+                    <div class="serviceHolder" id="selfEmpowerment" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px; border-bottom-left-radius: 40px;">
                         <div class="flex p-3">
                             <img class="w-32 rounded-full" src="public/images/30ca88d3359211348da8c7d43ab2bf92-removebg-preview.webp">
                             <h3 class="text-orange-500 pt-7 text-lg pl-3">Self-Empowerment</h3>
@@ -156,7 +161,7 @@
                             the couples within us, as we beleive in the power of a family.<a class="text-blue-700" href="services.html">Continue Reading></a>
                         </p>
                     </div>
-                    <div class="serviceHolder" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px;border-bottom-left-radius: 40px;">
+                    <div class="serviceHolder" id="community" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px;border-bottom-left-radius: 40px;">
                         <div class="flex p-3">
                             <img class="w-32 rounded-full" src="public/images/8fba4f5365636c4144b60a598e78e9f4-removebg-preview.webp">
                             <h3 class="text-orange-500 pt-7 text-lg">Community Empowerment</h3>
@@ -170,7 +175,7 @@
                             empowerment.<a class="text-blue-700" href="services.html">Continue Reading></a>
                         </p>
                     </div>
-                    <div class="serviceHolder" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px;border-bottom-left-radius: 40px;">
+                    <div class="serviceHolder" id="finance" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px;border-bottom-left-radius: 40px;">
                         <div  class="flex p-3">
                             <img class="w-28 rounded-full"  src="public/images/cba637b67b68bfc4b88016740d8d4c6f-removebg-preview.webp">
                             <h3 class="text-orange-500 pt-7 text-lg">Finance And Investment</h3>
@@ -182,7 +187,7 @@
                             Poutry projects...<a class="text-blue-700" href="services.html">Continue Reading></a>
                         </p>
                     </div>
-                    <div class="serviceHolder mt-10" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px;border-bottom-left-radius: 40px;">
+                    <div class="serviceHolder mt-10" id="climate" style="transition: all 1s ease-in-out; transform: scale(2px);border-bottom-right-radius:40px;border-bottom-left-radius: 40px;">
                         <div  class="flex p-3">
                             <img class="w-28 rounded-full"  src="public/images/d7b766e3211fa8f3446b148e4384d989-removebg-preview.webp">
                             <h3 class="text-orange-500 pt-7 text-lg">Climate change</h3>
@@ -209,9 +214,9 @@
                                 <h2 class="text-center p-3 text-white bg-black">Leadership Development</h2>
                                 <img class="object-cover h-[300px]" id="achievImg1" src="public/images/IMG-20230105-WA0015 - Copy.webp">
                                 <p class="-mt-[300px] md:-mt-[300px] text-center bg-gray-800 text-white z-10 relative h-[300px] md:h-[300px] p-5 md:p-14 invisible opacity-0 hover:opacity-100" style="transition: all ease-in-out 1s; transform: scale(2px);" id="achieveP">
-                                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti,
-                                    odio ea eius illum saepe, est obcaecati sequi tenetur id quisquam 
-                                   iusto aliquid eaque assumenda quidem voluptatum quas nulla sit magnam.
+                                  We came together to guide the youth on leadership skills and their progression to leadership. Through our program,
+                                  many youths were empowered and guided by experienced mentors into leadership. We beleive that leaders are not only
+                                  born, but also made.
                                 </p>
                             </div>
                         </div>
@@ -260,7 +265,7 @@
                 </div>
             </div>
         </section>
-        <section><!--events section-->
+        <section id="events"><!--events section-->
             <div class="w-full bg-black pb-20 h-auto">
                 <h2 class="text-orange-500 text-center text-xl pt-14 md:pt-24">~ Our Current Events~</h2>
                 <div class="block md:grid grid-cols-2 pt-3 md:pt-14 w-9/12 md:w-10/12 m-auto reveal">
@@ -279,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <section><!--blog section-->
+        <section id="blogs"><!--blog section-->
             <div class="w-full pb-20 pt-20 h-auto bg-gray-50">
                 <h2 class="text-center text-orange-500 text-xl">~~Our Blogs</h2>
                 <div class="w-10/12 m-auto pt-14 block md:grid grid-cols-3 reveal">
@@ -325,11 +330,11 @@
                 </div>
             </div>
         </section>
-        <section><!--team section-->
+        <section id="team"><!--team section-->
             <div class="w-full pt-20 bg-gray-300 pb-20 h-auto">
                 <h2 class="text-xl text-orange-500 text-center pb-10">~ Meet Our Team ~</h2>
                 <div class="block md:grid grid-cols-3 w-10/12 m-auto reveal">
-                    <div class="member mb-36 md:mb-32 md:mt-0">
+                    <div class="member mb-36 md:mb-32 md:mt-0 mr-5">
                         <img class="h-64 w-full object-cover" src="public/images/WhatsApp Image 2023-11-17 at 8.57.08 AM (1).webp">
                         <p class="bg-gray-100 p-3">
                             Daniel Muchomba Nthiga
@@ -355,7 +360,7 @@
                             </div>
                         </p>
                     </div>
-                    <div class="member mb-36 md:mb-32 md:mt-0">
+                    <div class="member mb-36 md:mb-32 md:mt-0 ml-">
                         <img class="h-64 w-full object-cover" src="public/images/WhatsApp Image 2023-11-17 at 8.57.07 AM (1).webp">
                         <p class="bg-gray-100 p-4">
                             Joel Munene Kibaara
@@ -373,7 +378,7 @@
                         <p class="bg-gray-100 p-4">
                             David Mwendwa Mutugi
                             <span class="text-orange-500">Organizing Secretary</span>
-                            <div class="flex bg-gray-100 pb-2">
+                            <div class="flex bg-gray-100 h-8 pb-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-3 text-blue-700 mr-3">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                   </svg>
@@ -382,11 +387,11 @@
                         </p>
                     </div>
                     <div class="member mb-40 md:mb-32 md:mt-10 reveal">
-                        <img class="h-64 w-full object-cover" src="public/images/WhatsApp Image 2023-11-26 at 9.54.46 AM.webp">
+                        <img class="h-72 w-full object-cover" src="public/images/WhatsApp Image 2023-11-26 at 9.54.46 AM.webp">
                         <p class="bg-gray-100 p-4">
                             Haron Mutheti Muturi
                             <span class="text-orange-500">Junior Member</span>
-                            <div class="flex bg-gray-100 pb-2">
+                            <div class="flex bg-gray-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-3 text-blue-700 mr-3">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                   </svg>
@@ -395,11 +400,11 @@
                         </p>
                     </div>
                     <div class="member mt-28 md:mt-10 reveal">
-                        <img class="h-64 w-full object-cover md:object-cover" src="public/images/WhatsApp Image 2023-11-26 at 12.27.51 PM.webp">
+                        <img class="h-72 w-full object-cover md:object-cover" src="public/images/WhatsApp Image 2023-11-26 at 12.27.51 PM.webp">
                         <p class="bg-gray-100 p-4">
                             Stella Njagi
                             <span class="text-orange-500">Junior Member</span>
-                            <div class="flex bg-gray-100 pb-2">
+                            <div class="flex bg-gray-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-3 text-blue-700 mr-3">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                   </svg>
@@ -408,11 +413,11 @@
                         </p>
                     </div>
                     <div class="member mt-28 md:mt-10 reveal">
-                        <img class="h-64 w-full object-cover md:object-cover" src="public/images/WhatsApp Image 2023-11-28 at 11.46.37 PM (1).webp">
+                        <img class="h-72 w-full object-cover md:object-cover" src="public/images/WhatsApp Image 2023-11-28 at 11.46.37 PM (1).webp">
                         <p class="bg-gray-100 p-4">
                             Peter Mutembei
                             <span class="text-orange-500">Senior Member</span>
-                            <div class="flex bg-gray-100 pb-2">
+                            <div class="flex bg-gray-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-3 text-blue-700 mr-3">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                   </svg>
@@ -426,7 +431,7 @@
                 </p>
             </div>
         </section>
-        <section><!--testimonies section-->
+        <section id="testimonies"><!--testimonies section-->
             <div class="w-full bg-gray-700 pt-20 h-auto pb-20">
                 <h2 class="text-orange-500 text-center text-xl pb-6">~~What Our Members Have To Say!</h2>
                 <div class=" w-11/12 md:w-9/12 p-10 bg-white m-auto reveal">
@@ -485,7 +490,7 @@
             <div class="w-full pt-10 pb-10 bg-black">
                 <div class="w-11/12 m-auto p-3 block md:flex">
                     <div class="w-full md:w-6/12 pr-0 md:pr-3 pb-4 md:pb-0">
-                        <img class="w-14 rounded-full m-1" src="public/images/PROPOSED 2E.webp" alt="logo">
+                        <img class="w-14 rounded-full m-1" src="public/images/WhatsApp Image 2023-12-11 at 11.30.51 AM.jpeg" alt="logo">
                         <p class="text-white italic">
                             <span class="text-orange-500 pt-3 pb-3">Wake & Shine</span><br>
                             Unleash the Possible: Join Our Journey in Community Empowerment and Youth Advancement!
@@ -494,7 +499,7 @@
                     <div class="text-white">
                         <ul class="block pb-4 md:pb-0">
                             <li class="fNav"><a href="#">Home</a></li>
-                            <li class="fNav"><a href="#about">About Us</a></li>
+                            <li class="fNav"><a href="#abtHolder">About Us</a></li>
                             <li class="fNav"><a href="#services">What we do</a></li>
                             <li class="fNav"><a href="#achievements">Our Achievements</a></li>
                             <li class="fNav"><a href="#contacts">Contacts</a></li>

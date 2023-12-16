@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 let counter=0;
 let counter2=0;
 let counter3=0;
+let counter4=0;
 let navArrow=document.getElementById("navArrow");
 let moreNav=document.getElementById("moreNav");
 navArrow.addEventListener("mouseover",()=>{
@@ -63,8 +64,13 @@ navArrow2.addEventListener("click",()=>{
 })
 let navArrow3=document.getElementById("navArrow3");
 let moreNav3=document.getElementById("moreNav3");
+let navArrow4=document.getElementById("navArrow4");
+let moreNav4=document.getElementById("moreNav4");
 navArrow3.addEventListener("mouseover",()=>{
     moreNav3.style.visibility="visible";
+})
+navArrow4.addEventListener("mouseover",()=>{
+    moreNav4.style.visibility="visible";
 })
 navArrow3.addEventListener("click",()=>{
     moreNav3.style.visibility="visible";
@@ -73,6 +79,17 @@ navArrow3.addEventListener("click",()=>{
         moreNav3.style.visibility="hidden";
         counter3=0;
     }
+})
+navArrow4.addEventListener("click",()=>{
+    moreNav4.style.visibility="visible";
+    counter4++;
+    if(counter4>=2){
+        moreNav4.style.visibility="hidden";
+        counter4=0;
+    }
+})
+moreNav4.addEventListener("mouseleave",()=>{
+    moreNav4.style.visibility="hidden";
 })
 moreNav3.addEventListener("mouseleave",()=>{
     moreNav3.style.visibility="hidden";
@@ -159,6 +176,79 @@ testiBackIcon.addEventListener("click",()=>{
     if(Counter<=testimoners.length){
         Counter=1;
     }
+})
+//make about blur
+let vision=document.getElementById("vision");
+let mission=document.getElementById("mission");
+let values=document.getElementById("values");
+vision.addEventListener("mouseover",()=>{
+    mission.style.filter="blur(3px)";
+    values.style.filter="blur(3px)"
+})
+vision.addEventListener("mouseleave",()=>{
+    mission.style.filter="blur(0px)";
+    values.style.filter="blur(0px)"
+})
+mission.addEventListener("mouseover",()=>{
+    vision.style.filter="blur(3px)";
+    values.style.filter="blur(3px)"
+})
+mission.addEventListener("mouseleave",()=>{
+    vision.style.filter="blur(0px)";
+    values.style.filter="blur(0px)"
+})
+values.addEventListener("mouseover",()=>{
+    mission.style.filter="blur(3px)";
+    vision.style.filter="blur(3px)"
+})
+values.addEventListener("mouseleave",()=>{
+    mission.style.filter="blur(0px)";
+    vision.style.filter="blur(0px)"
+})
+// make services blur
+let selfEmpowerment=document.getElementById("selfEmpowerment");
+let community=document.getElementById("community");
+let finance=document.getElementById("finance");
+let climate=document.getElementById("climate")
+selfEmpowerment.addEventListener("mouseover",()=>{
+    community.style.filter="blur(3px)";
+    finance.style.filter="blur(3px)";
+    climate.style.filter="blur(3px)";
+})
+selfEmpowerment.addEventListener("mouseleave",()=>{
+    community.style.filter="blur(0px)";
+    finance.style.filter="blur(0px)";
+    climate.style.filter="blur(0px)";
+})
+community.addEventListener("mouseover",()=>{
+    selfEmpowerment.style.filter="blur(3px)";
+    finance.style.filter="blur(3px)";
+    climate.style.filter="blur(3px)";
+})
+community.addEventListener("mouseleave",()=>{
+    selfEmpowerment.style.filter="blur(0px)";
+    finance.style.filter="blur(0px)";
+    climate.style.filter="blur(0px)";
+})
+finance.addEventListener("mouseover",()=>{
+    community.style.filter="blur(3px)";
+    selfEmpowerment.style.filter="blur(3px)";
+    climate.style.filter="blur(3px)";
+})
+finance.addEventListener("mouseleave",()=>{
+    community.style.filter="blur(0px)";
+    selfEmpowerment.style.filter="blur(0px)";
+    climate.style.filter="blur(0px)";
+})
+climate.addEventListener("mouseover",()=>{
+    community.style.filter="blur(3px)";
+    selfEmpowerment.style.filter="blur(3px)";
+    finance.style.filter="blur(3px)";
+})
+climate.addEventListener("mouseleave",()=>{
+    community.style.filter="blur(0px)";
+    selfEmpowerment.style.filter="blur(0px)";
+    finance.style.filter="blur(0px)";
 })
 
 
