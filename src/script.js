@@ -69,9 +69,9 @@ let moreNav4=document.getElementById("moreNav4");
 navArrow3.addEventListener("mouseover",()=>{
     moreNav3.style.visibility="visible";
 })
-navArrow4.addEventListener("mouseover",()=>{
-    moreNav4.style.visibility="visible";
-})
+// navArrow4.addEventListener("mouseover",()=>{
+//     moreNav4.style.visibility="visible";
+// })
 navArrow3.addEventListener("click",()=>{
     moreNav3.style.visibility="visible";
     counter3++;
@@ -80,17 +80,17 @@ navArrow3.addEventListener("click",()=>{
         counter3=0;
     }
 })
-navArrow4.addEventListener("click",()=>{
-    moreNav4.style.visibility="visible";
-    counter4++;
-    if(counter4>=2){
-        moreNav4.style.visibility="hidden";
-        counter4=0;
-    }
-})
-moreNav4.addEventListener("mouseleave",()=>{
-    moreNav4.style.visibility="hidden";
-})
+// navArrow4.addEventListener("click",()=>{
+//     moreNav4.style.visibility="visible";
+//     counter4++;
+//     if(counter4>=2){
+//         moreNav4.style.visibility="hidden";
+//         counter4=0;
+//     }
+// })
+// moreNav4.addEventListener("mouseleave",()=>{
+//     moreNav4.style.visibility="hidden";
+// })
 moreNav3.addEventListener("mouseleave",()=>{
     moreNav3.style.visibility="hidden";
 })
@@ -113,7 +113,7 @@ menuIcon.addEventListener("click",()=>{
 });
 // home text changer
 document.addEventListener('DOMContentLoaded', function () {
-    const texts = ['Unleash the Possible: Join Our Journey in Community Empowerment and Youth Advancement!','Harmony in Action: Bridging Generations, Transforming Lives in Our Shared Community','An empowered community with the understanding of utilizing resources rationally for living dignified lives.','Igniting Change, Inspiring Futures: A Community Hub for Youth Empowerment and Growth','Empowering Tomorrow: Building Stronger Communities, Transforming Young Lives.'];
+    const texts = ['Unleash the Possible: Join Our Journey in Community Empowerment and Youth Advancement!','Harmony in Action: Bridging Generations, Transforming Lives in Our Shared Community','An empowered community with the understanding of utilizing resources rationally for living dignified lives.','Igniting Change, Inspiring Future: A Community Hub for Youth Empowerment and Growth','Empowering Tomorrow: Building Stronger Communities, Transforming Young Lives.'];
     let currentIndex = 0;
     const textContainer = document.getElementById('text-container');
     function updateText() {
