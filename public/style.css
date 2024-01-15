@@ -1179,6 +1179,11 @@ video {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1734,8 +1739,20 @@ video {
     padding-left: 130px;
   }
 
+  .md\:pl-\[140px\] {
+    padding-left: 140px;
+  }
+
+  .md\:pl-\[155px\] {
+    padding-left: 155px;
+  }
+
   .md\:pl-\[20px\] {
     padding-left: 20px;
+  }
+
+  .md\:pl-\[92px\] {
+    padding-left: 92px;
   }
 
   .md\:pr-3 {
